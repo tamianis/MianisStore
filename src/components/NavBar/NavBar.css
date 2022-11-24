@@ -1,0 +1,26 @@
+.medalla{
+    display: flex;
+    position: absolute;
+    left: 92%;
+    top: 25px;
+
+}
+
+.logocarro{
+    width: 60px;
+    display: flex;
+    position: absolute;
+    left: 90%;
+    top:25px
+}
+.me-auto a:hover {
+    color: rgb(97, 42, 6);
+    
+}
+
+.me-auto{
+    font-weight: bolder;
+    font-style: italic;
+    
+}
+
