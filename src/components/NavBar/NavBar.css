@@ -21,6 +21,11 @@
 .me-auto{
     font-weight: bolder;
     font-style: italic;
-    
+}
+.a{
+    color: chocolate;
 }
 
+.linknav{
+    padding: 10%;
+}

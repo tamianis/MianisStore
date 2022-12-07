@@ -5,7 +5,7 @@ const CartWidget = () => {
 		<div>
 			<img
 				className="logocarro"
-				src=".\src\components\Img\carrito.png"
+				src="..\src\assets\carrito.png"
 				alt="logo"
 			/>
 		</div>

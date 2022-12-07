@@ -1,0 +1,13 @@
+.sectionList{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.btnlist{
+    background-color: rgb(167, 122, 64);
+    margin: 3%;
+    font-weight: 600;
+    color:white;
+}

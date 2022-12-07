@@ -6,44 +6,49 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
 	return (
 		<Navbar bg="light" expand="lg" fixed="top">
 			<Container>
-				
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<img
-					className="logo"
-					src=".\src\components\Img\catlogo.webp"
-					alt="logo"
-				/>
+
+				<Link to="/">
+					<img
+						className="logo linknav"
+						to="/home"
+						src="https://cdn.pixabay.com/photo/2016/10/11/18/17/calico-cat-1732370_960_720.png"
+						alt="logo"
+					/>
+				</Link>
 				<Navbar.Brand href="">Mianis store</Navbar.Brand>
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
-						<Nav.Link href="">Comidas</Nav.Link>
-						<Nav.Link href="" >
+						<NavLink className="linknav" to="/category/comida">
+							Comidas
+						</NavLink>
+						<NavLink className="linknav" to="/category/juguete">
 							Juguetes
-						</Nav.Link>
-						<Nav.Link href="" >
+						</NavLink>
+						<NavLink className="linknav" to="/category/rascador">
 							Rascadores
-						</Nav.Link>
-						<Nav.Link href="" >
-							Areneros
-						</Nav.Link>
-						<Nav.Link href="" >
-							Extras
-						</Nav.Link>
+						</NavLink>
+						<NavLink className="linknav" to="/category/arena">
+							Arena
+						</NavLink>
 					</Nav>
 				</Navbar.Collapse>
 				<div>
-				<a className="nav_link" href="">
-			<CartWidget /></a>
-					<Badge bg="secondary" className='medalla'>6</Badge>
+					<Link to="/carrito">
+						<CartWidget />
+					</Link>
+					<Badge bg="secondary" className="medalla">
+						5
+					</Badge>
 				</div>
 			</Container>
 		</Navbar>
-		
 	);
 };
 
