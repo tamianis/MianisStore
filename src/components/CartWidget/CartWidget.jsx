@@ -1,11 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useCartContext } from "../../context/CartContext";
 
-const CartWidget = () => {
+export const CartWidget = () => {
+
+	const {totalCant} = useCartContext ()
 	return (
 		<div>
+			{totalCant ()!== 0 && totalCant ()}
 			<img
 				className="logocarro"
-				src="..\src\assets\carrito.png"
+				src="https://media.tenor.com/567jieqh1aYAAAAi/pusheen.gif"
 				alt="logo"
 			/>
 		</div>

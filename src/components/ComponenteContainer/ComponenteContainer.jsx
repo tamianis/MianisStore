@@ -6,7 +6,7 @@ function ComponenteContainer() {
 	let tituloApp = "Mianis Store";
 
 	return (
-		<div style={{marginTop:'100px'}}>
+		<div>
 			<Titulo titulo={tituloApp}/>
 			<NavBar />
 			<ItemListContainer greetings={"Bienvenidos a la tienda"} />

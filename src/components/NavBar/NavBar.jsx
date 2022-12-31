@@ -4,8 +4,6 @@ import CartWidget from "../CartWidget/CartWidget";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Badge from "react-bootstrap/Badge";
-import Button from "react-bootstrap/Button";
 import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
@@ -35,18 +33,17 @@ const NavBar = () => {
 							Rascadores
 						</NavLink>
 						<NavLink className="linknav" to="/category/arena">
-							Arena
+							Arenas
 						</NavLink>
 					</Nav>
-				</Navbar.Collapse>
+				
 				<div>
 					<Link to="/carrito">
 						<CartWidget />
 					</Link>
-					<Badge bg="secondary" className="medalla">
-						5
-					</Badge>
+
 				</div>
+				</Navbar.Collapse>
 			</Container>
 		</Navbar>
 	);

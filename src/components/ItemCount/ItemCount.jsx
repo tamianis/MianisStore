@@ -1,11 +1,11 @@
 import { useState,useCallback } from "react";
 import "./ItemCount.css";
 
-const ItemCount = ({stock = 10, initial = 1, onAdd}) => {
+const ItemCount = ({stock = 10, initial = 0, onAdd}) => {
 	const [count, setCount] = useState(0);
 
 	const restar = () => {
-		if (count > initial) {
+		if (count >= initial) {
 			setCount(count - 1);
 		}
 	};
@@ -17,7 +17,7 @@ const ItemCount = ({stock = 10, initial = 1, onAdd}) => {
 
 	const handleOnAdd = useCallback(() => {
 		onAdd(count);
-	}, []);
+	}, [count]);
 
 	return (
 		<div className="card m-5">
@@ -32,9 +32,9 @@ const ItemCount = ({stock = 10, initial = 1, onAdd}) => {
 					-
 				</button>
 				<div className="card-footer">
-					<button className="btnAdd" onClick={handleOnAdd}>
+				{count<1 ? 'LA CANTIDAD MINIMA DEBE SER MAYOR A 0' : <button className="btnAdd" onClick={handleOnAdd}>
 						Agregar
-					</button>
+					</button>}	
 				</div>
 			</div>
 		</div>
