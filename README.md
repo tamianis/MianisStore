@@ -16,5 +16,5 @@ Herramientas:
     -CSS3
     -JavaScript
 
-    Control de versiones
+   Control de versiones
     -git
