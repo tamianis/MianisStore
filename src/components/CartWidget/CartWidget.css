@@ -1,0 +1,15 @@
+.cartTotal {
+    width: 600px;
+    display: flex;
+    position: absolute;
+    top:25px
+}
+
+.cartTotal p {
+    color: #425ee6;
+    font-size: 35px;
+}
+
+.logocarro{
+    width: 15%;
+}
